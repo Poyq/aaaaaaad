@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #171717;
+}
+
+#particles-js {
+	position : absolute;
+    width:100%;
+    height:99%;
+    z-index:-1;
+}
+
+h1 { 
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 60px;
+
+}
+
+.card {
+	border: 0px;
+	border-radius: 40px;
+	color: white;
+	width: 20rem;
+	margin-bottom: 40px !important;
+}
+
+.card-body {
+	background-color: #242424;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.card-title, .price {
+	text-align: center;
+}
+
+
+.custom_button {
+
+	background-color: #ef5734;
+	background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+
+	color: white;
+	border: 0px;
+	border-radius: 30px;
+
+	padding-right: 20px;
+	padding-left: 20px;
+
+	text-decoration: none;
+}
+
+.custom_button:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#lowerleft
+{
+    position: fixed;
+    bottom:0;
+    left:0;
+    margin-bottom: 20px;
+    margin-left : 10px;
+    width: 300px;
+    height: 50px;
+    background-color: #121212;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.accept {
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+	font-size: 18px;
+}
+
+#topleft
+{
+    position: relative;
+    top: 0;
+    left:0;
+    margin-top: 20px;
+    margin-left : 10px;
+    width: 360px;
+    height: 40px;
+    background-color: #6370b8;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#topright
+{
+    position: relative;
+    bottom: 60px;
+    left: 79%;
+    margin-top: 20px;
+    margin-left : 10px;
+    width: 360px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.terms { 
+
+	width:100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center; /* This line is not needed but centers your text */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.terms:hover {
+
+	text-shadow: 0 0 5px #ffffff;
+}
+
+@media only screen and (max-width: 575px) {
+  .card {
+		border: 0px;
+		border-radius: 40px;
+		color: white;
+		width: 20rem;
+		margin-bottom: 40px !important;
+		margin: 0 auto; /* Added */
+        float: none; /* Added */
+	}
+
+	.terms { 
+
+		position: relative;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: white;
+		text-align: center;
+		margin-bottom: 20px;
+		display: inline-block;
+
+	}
+}
